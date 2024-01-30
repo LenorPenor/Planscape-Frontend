@@ -15,7 +15,7 @@ const CreateListForm = (props) => {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
               }
-            const response = await fetch(`http://localhost:5000/api/lists/${props.projectId}`,{                         //fetch route for creating list
+            const response = await fetch(`https://planscape.onrender.com/api/lists/${props.projectId}`,{                         //fetch route for creating list
 			    headers,
                 method: 'POST',                                                                                         //post
                 body: JSON.stringify({
