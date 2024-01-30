@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 const TaskOpen = (props) => {
     const token = localStorage.getItem('token')                                                 //get token
 
-    const API_URL_TASKS = 'http://localhost:5000/api/tasks'                                     //default tasks-route
+    const API_URL_TASKS = 'https://planscape.onrender.com/api/tasks'                                     //default tasks-route
     
     //set data
     const [title, setTitle] = useState(props.heading)
