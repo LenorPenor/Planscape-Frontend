@@ -14,7 +14,7 @@ const UpdateListForm = (props) => {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
               }
-            const response = await fetch(`http://localhost:5000/api/lists/${props.list.id}`,{                               //fetch list to be updates
+            const response = await fetch(`https://planscape.onrender.com/api/lists/${props.list.id}`,{                               //fetch list to be updates
 			    headers,
                 method: 'PUT',                                                                                              //PUT
                 body: JSON.stringify({
