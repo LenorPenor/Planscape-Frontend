@@ -9,7 +9,7 @@ const Task = (props) => {
         token = localStorage.getItem('token')                                                   //get token
     }
 
-    const API_URL_TASKS = 'http://localhost:5000/api/tasks'                                 //default tasks-route
+    const API_URL_TASKS = 'https://planscape.onrender.com/api/tasks'                                 //default tasks-route
 
     //set Task data
     const [isDone, setDone] = useState(props.isDone)
