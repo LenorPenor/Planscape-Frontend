@@ -23,7 +23,7 @@ const CreateTaskForm = (props) => {
                 'Authorization': `Bearer ${token}`,                                                                         //token authorization
                 'Content-Type': 'application/json',
               }
-            const response = await fetch(`http://localhost:5000/api/tasks/${props.list.id}`,{                               //fetch create-task route
+            const response = await fetch(`https://planscape.onrender.com/api/tasks/${props.list.id}`,{                               //fetch create-task route
 			    headers,
                 method: 'POST',                                                                                             //post request
                 body: JSON.stringify({                                                                                      //send input data to backend
