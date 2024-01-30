@@ -15,7 +15,7 @@ const List = (props) => {
 
     const currentDate = new Date(Date.now())                                                    //get current date
 
-    const API_URL_LISTS = 'http://localhost:5000/api/lists'                                     //default lists-route
+    const API_URL_LISTS = 'https://planscape.onrender.com/api/lists'                                     //default lists-route
 
     //scrollbar behaviour
     const wrapperRef = useRef()
